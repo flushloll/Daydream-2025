@@ -1,9 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c6jkds74fn2mm"]
-
-[ext_resource type="FontFile" uid="uid://b54uct0f8v7qs" path="res://UI/glacial-indifference.bold.otf" id="1_eprtr"]
-[ext_resource type="Texture2D" uid="uid://b8l11wm1udaeo" path="res://maleofficecropped.png" id="1_ujufd"]
-[ext_resource type="FontFile" uid="uid://evhml12gqiqw" path="res://UI/glacial-indifference.regular.otf" id="1_w6t5s"]
-[ext_resource type="Texture2D" uid="uid://cxmwym0rc7l60" path="res://2025_09_28_0or_Kleki.png" id="4_e28vo"]
+[gd_scene load_steps=4 format=3 uid="uid://c6jkds74fn2mm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_o3jxj"]
 content_margin_left = 0.0
@@ -22,399 +17,103 @@ corner_radius_bottom_right = 8
 corner_radius_bottom_left = 8
 corner_detail = 5
 
-[sub_resource type="LabelSettings" id="LabelSettings_4uthp"]
-font = ExtResource("1_eprtr")
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_e28vo"]
-content_margin_left = 2.0
-content_margin_top = 2.0
-content_margin_right = 2.0
-content_margin_bottom = 2.0
-bg_color = Color(0.16492918, 0.6605022, 0, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 6
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4uthp"]
-bg_color = Color(0.29191545, 0.6950134, 0.94268703, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fk3jj"]
-content_margin_left = 2.0
-content_margin_top = 2.0
-content_margin_right = 2.0
-content_margin_bottom = 2.0
-bg_color = Color(0.4947539, 0.29217672, 0.82200015, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 6
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h8lhh"]
-content_margin_left = 2.0
-content_margin_top = 2.0
-content_margin_right = 2.0
-content_margin_bottom = 2.0
-bg_color = Color(0.9332981, 0.33414844, 0.5960915, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 6
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kh1fh"]
-content_margin_left = 2.0
-content_margin_top = 2.0
-content_margin_right = 2.0
-content_margin_bottom = 2.0
-bg_color = Color(0.91764706, 0.41568628, 0.19607843, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 6
-
-[sub_resource type="LabelSettings" id="LabelSettings_0h5rb"]
-font = ExtResource("1_eprtr")
-font_size = 24
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h2030"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0f027"]
 content_margin_left = 0.0
 content_margin_top = 0.0
 content_margin_right = 0.0
 content_margin_bottom = 0.0
 bg_color = Color(0.1, 0.1, 0.1, 0.6)
-border_width_right = 8
-border_color = Color(0.0885599, 0.0885599, 0.0885599, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.09019608, 0.09019608, 0.09019608, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
 corner_detail = 5
 
-[sub_resource type="LabelSettings" id="LabelSettings_w6t5s"]
-font = ExtResource("1_w6t5s")
-font_size = 32
+[sub_resource type="LabelSettings" id="LabelSettings_2c62f"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0h5rb"]
-content_margin_left = 8.0
-content_margin_top = 8.0
-content_margin_right = 8.0
-content_margin_bottom = 8.0
-bg_color = Color(0.1, 0.1, 0.1, 0.3)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0.13319641, 0.13319641, 0.13319635, 1)
-corner_radius_top_left = 6
-corner_radius_top_right = 6
-corner_radius_bottom_right = 6
-corner_radius_bottom_left = 6
-corner_detail = 6
+[node name="MainScene" type="Node2D"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_van8x"]
-bg_color = Color(0.79607844, 0.1764706, 0.1764706, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-border_color = Color(0.14767182, 0.14767182, 0.1476717, 1)
-corner_radius_top_left = 8
-corner_radius_top_right = 8
-corner_radius_bottom_right = 8
-corner_radius_bottom_left = 8
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="CanvasLayer" type="CanvasLayer"]
-
-[node name="CharacterAttributesAndDialogue" type="Control" parent="."]
+[node name="Control" type="Control" parent="CanvasLayer"]
 layout_mode = 3
-anchor_top = 0.76100004
+anchor_top = 0.674
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 0.079956055
 grow_horizontal = 2
 grow_vertical = 2
-mouse_filter = 2
 
-[node name="HBoxContainer" type="HBoxContainer" parent="CharacterAttributesAndDialogue"]
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = -0.16800001
 anchor_right = 1.0
 anchor_bottom = 1.0
 size_flags_horizontal = 3
-mouse_filter = 2
 
-[node name="PanelContainer" type="PanelContainer" parent="CharacterAttributesAndDialogue/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_stretch_ratio = 1.15
-theme_override_styles/panel = SubResource("StyleBoxFlat_o3jxj")
 
-[node name="MarginContainer" type="MarginContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer"]
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/HBoxContainer/MarginContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_constants/margin_left = 30
-theme_override_constants/margin_top = 30
-theme_override_constants/margin_right = 30
-theme_override_constants/margin_bottom = 30
+theme_override_constants/separation = 30
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer"]
+[node name="TextureProgressBar" type="TextureProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_constants/separation = 10
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.22
-text = "Charisma"
-label_settings = SubResource("LabelSettings_4uthp")
-
-[node name="ProgressBar" type="ProgressBar" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_e28vo")
-value = 81.0
-show_percentage = false
 metadata/_edit_use_anchors_ = true
 
-[node name="HBoxContainer2" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
+[node name="TextureProgressBar2" type="TextureProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-theme_override_constants/separation = 12
 
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
+[node name="TextureProgressBar3" type="TextureProgressBar" parent="CanvasLayer/Control/HBoxContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(0, 50)
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.22
-text = "Optimism"
-label_settings = SubResource("LabelSettings_4uthp")
 
-[node name="ProgressBar" type="ProgressBar" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer2"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_4uthp")
-value = 30.0
-show_percentage = false
-metadata/_edit_use_anchors_ = true
-
-[node name="HBoxContainer3" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.22
-text = "Wisdom"
-label_settings = SubResource("LabelSettings_4uthp")
-
-[node name="ProgressBar" type="ProgressBar" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer3"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_fk3jj")
-value = 42.0
-show_percentage = false
-metadata/_edit_use_anchors_ = true
-
-[node name="HBoxContainer4" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.22
-text = "Health"
-label_settings = SubResource("LabelSettings_4uthp")
-
-[node name="ProgressBar" type="ProgressBar" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer4"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_h8lhh")
-value = 17.0
-show_percentage = false
-metadata/_edit_use_anchors_ = true
-
-[node name="HBoxContainer5" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer"]
-layout_mode = 2
-theme_override_constants/separation = 12
-
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.22
-text = "Ambition"
-label_settings = SubResource("LabelSettings_4uthp")
-
-[node name="ProgressBar" type="ProgressBar" parent="CharacterAttributesAndDialogue/HBoxContainer/PanelContainer/MarginContainer/VBoxContainer/HBoxContainer5"]
-custom_minimum_size = Vector2(0, 15)
-layout_mode = 2
-size_flags_horizontal = 3
-mouse_filter = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_kh1fh")
-value = 63.0
-show_percentage = false
-metadata/_edit_use_anchors_ = true
-
-[node name="Control" type="Control" parent="CharacterAttributesAndDialogue/HBoxContainer"]
+[node name="Control" type="Control" parent="CanvasLayer/Control/HBoxContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_stretch_ratio = 1.8
-mouse_filter = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = -0.40600002
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_top = 31.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/separation = -8
-
-[node name="MarginContainer" type="MarginContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-size_flags_stretch_ratio = 0.28
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_right = 625
-
-[node name="PanelContainer2" type="PanelContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/MarginContainer"]
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_o3jxj")
-
-[node name="MarginContainer" type="MarginContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/MarginContainer/PanelContainer2"]
-layout_mode = 2
-theme_override_constants/margin_left = 17
-theme_override_constants/margin_right = 17
-
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/MarginContainer/PanelContainer2/MarginContainer"]
-layout_mode = 2
-text = "ALEX"
-label_settings = SubResource("LabelSettings_0h5rb")
-horizontal_alignment = 1
-
-[node name="PanelContainer" type="PanelContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-mouse_filter = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_o3jxj")
-
-[node name="Control" type="Control" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer"]
-clip_contents = true
-layout_mode = 2
-mouse_filter = 2
-
-[node name="HBoxContainer" type="HBoxContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/HBoxContainer/Control"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_o3jxj")
 
-[node name="PanelContainer2" type="PanelContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer"]
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme_override_styles/panel = SubResource("StyleBoxFlat_h2030")
-
-[node name="MarginContainer" type="MarginContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer/PanelContainer2"]
-layout_mode = 2
-theme_override_constants/margin_left = 8
-theme_override_constants/margin_top = 8
-theme_override_constants/margin_right = 8
-theme_override_constants/margin_bottom = 8
-
-[node name="TextureRect" type="TextureRect" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer/PanelContainer2/MarginContainer"]
-layout_mode = 2
-texture = ExtResource("1_ujufd")
-expand_mode = 5
-
-[node name="MarginContainer" type="MarginContainer" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer"]
-custom_minimum_size = Vector2(580, 0)
-layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.0
-theme_override_constants/margin_left = 15
-theme_override_constants/margin_top = 5
-theme_override_constants/margin_right = 15
-theme_override_constants/margin_bottom = 5
-
-[node name="Control" type="Control" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer/MarginContainer"]
+[node name="Control" type="Control" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer"]
 layout_mode = 2
 
-[node name="Label" type="Label" parent="CharacterAttributesAndDialogue/HBoxContainer/Control/VBoxContainer/PanelContainer/Control/HBoxContainer/MarginContainer/Control"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer/Control"]
 layout_mode = 1
 anchors_preset = -1
-anchor_top = 0.11400001
-anchor_right = 1.0
-anchor_bottom = 0.92
-text = "Bring me food now!!!!!!!!!!!"
-label_settings = SubResource("LabelSettings_w6t5s")
-autowrap_mode = 1
+anchor_left = 0.006
+anchor_top = 0.025
+anchor_right = 0.28800002
+anchor_bottom = 0.275
 
-[node name="PlayerState" type="Control" parent="."]
-layout_mode = 3
-anchor_left = 0.675
-anchor_top = 0.026
-anchor_right = 0.98200005
-anchor_bottom = 0.109000005
-offset_top = 0.27999878
-offset_right = 0.039916992
-grow_horizontal = 0
-
-[node name="HBoxContainer" type="HBoxContainer" parent="PlayerState"]
-layout_mode = 1
-anchors_preset = -1
-anchor_top = 0.079
-anchor_right = 1.0
-anchor_bottom = 1.4080001
-grow_horizontal = 2
-grow_vertical = 2
-
-[node name="TextureRect" type="TextureRect" parent="PlayerState/HBoxContainer"]
+[node name="Panel" type="Panel" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer/Control/PanelContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_stretch_ratio = 0.34
-texture = ExtResource("4_e28vo")
-expand_mode = 5
+theme_override_styles/panel = SubResource("StyleBoxFlat_0f027")
 
-[node name="MarginContainer" type="MarginContainer" parent="PlayerState/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer/Control/PanelContainer"]
 layout_mode = 2
-theme_override_constants/margin_top = 20
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
 
-[node name="ProgressBar" type="ProgressBar" parent="PlayerState/HBoxContainer/MarginContainer"]
-custom_minimum_size = Vector2(300, 50)
+[node name="Label" type="Label" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer/Control/PanelContainer/MarginContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_styles/background = SubResource("StyleBoxFlat_0h5rb")
-theme_override_styles/fill = SubResource("StyleBoxFlat_van8x")
-value = 72.0
-fill_mode = 1
-show_percentage = false
+label_settings = SubResource("LabelSettings_2c62f")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/Control/HBoxContainer/Control/PanelContainer"]
+layout_mode = 2

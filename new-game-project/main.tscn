@@ -37,11 +37,7 @@ animations = [{
 }]
 
 [node name="Node2D" type="Node2D"]
-<<<<<<< HEAD
 position = Vector2(-23, 3)
-=======
-position = Vector2(640, 360)
->>>>>>> c051e87a611c7bfb095c86b7598df0f2421dfdd2
 script = ExtResource("1_ig7tw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
