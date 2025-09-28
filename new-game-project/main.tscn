@@ -1,10 +1,378 @@
-[gd_scene load_steps=3 format=3 uid="uid://cqow47bch5ocs"]
+[gd_scene load_steps=10 format=3 uid="uid://cqow47bch5ocs"]
 
 [ext_resource type="Script" uid="uid://b5ppdxgrcekyt" path="res://Scripts/main.gd" id="1_ig7tw"]
 [ext_resource type="Script" uid="uid://dj8x1nffwv3sr" path="res://Scripts/camera_2d.gd" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://bogx8ffbnk2lk" path="res://cubicle.tscn" id="3_lquwl"]
+[ext_resource type="Texture2D" uid="uid://cff1kc3w3ha4f" path="res://Little_Bits_Office_tileset/Office tiles/Little_Bits_office_walls.png" id="4_7mycd"]
+[ext_resource type="Texture2D" uid="uid://bpyy77wxilux" path="res://Little_Bits_Office_tileset/Office tiles/Little_Bits_Office_Floors.png" id="5_272bh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5vw27"]
+atlas = ExtResource("4_7mycd")
+region = Rect2(0, 0, 76, 77)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_kek77"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5vw27")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4c57u"]
+atlas = ExtResource("5_272bh")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_efxa6"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4c57u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Node2D" type="Node2D"]
+position = Vector2(-23, 3)
 script = ExtResource("1_ig7tw")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(-153, -310)
 script = ExtResource("2_0xm2m")
+
+[node name="Node2D9" type="Node2D" parent="."]
+metadata/_edit_group_ = true
+
+[node name="Node2D" type="Node2D" parent="Node2D9"]
+position = Vector2(-23, 27)
+
+[node name="Node2D2" type="Node2D" parent="Node2D9"]
+position = Vector2(24, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D6" parent="Node2D9/Node2D2" instance=ExtResource("3_lquwl")]
+position = Vector2(-22.5, -61.5)
+
+[node name="AnimatedSprite2D7" parent="Node2D9/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-61.5, -61.5)
+
+[node name="AnimatedSprite2D8" parent="Node2D9/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-100.5, -61.5)
+
+[node name="AnimatedSprite2D9" parent="Node2D9/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-138.5, -61.5)
+
+[node name="Node2D3" type="Node2D" parent="Node2D9"]
+position = Vector2(0, -50)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D3" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D4" type="Node2D" parent="Node2D9"]
+position = Vector2(0, -159)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D4" type="Node2D" parent="Node2D9/Node2D4"]
+position = Vector2(0, -90)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D4/Node2D4" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D4/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D4/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D4/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D5" type="Node2D" parent="Node2D9"]
+position = Vector2(180, 27)
+
+[node name="Node2D6" type="Node2D" parent="Node2D9"]
+position = Vector2(227, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D6" parent="Node2D9/Node2D6" instance=ExtResource("3_lquwl")]
+position = Vector2(-22.5, -61.5)
+
+[node name="AnimatedSprite2D7" parent="Node2D9/Node2D6" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-61.5, -61.5)
+
+[node name="AnimatedSprite2D8" parent="Node2D9/Node2D6" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-100.5, -61.5)
+
+[node name="AnimatedSprite2D9" parent="Node2D9/Node2D6" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-138.5, -61.5)
+
+[node name="Node2D7" type="Node2D" parent="Node2D9"]
+position = Vector2(203, -50)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D7" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D8" type="Node2D" parent="Node2D9"]
+position = Vector2(203, -159)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D4" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(0, -90)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D4" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-633, 186)
+
+[node name="Node2D2" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-586, 159)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D6" parent="Node2D9/Node2D8/Node2D2" instance=ExtResource("3_lquwl")]
+position = Vector2(-22.5, -61.5)
+
+[node name="AnimatedSprite2D7" parent="Node2D9/Node2D8/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-61.5, -61.5)
+
+[node name="AnimatedSprite2D8" parent="Node2D9/Node2D8/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-100.5, -61.5)
+
+[node name="AnimatedSprite2D9" parent="Node2D9/Node2D8/Node2D2" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-138.5, -61.5)
+
+[node name="Node2D3" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-610, 109)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D3" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D3" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D5" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-610, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D5" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D5" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D5" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D5" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D4" type="Node2D" parent="Node2D9/Node2D8/Node2D5"]
+position = Vector2(0, -90)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D5/Node2D4" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D5/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D5/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D5/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D6" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-430, 186)
+
+[node name="Node2D7" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-383, 159)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D6" parent="Node2D9/Node2D8/Node2D7" instance=ExtResource("3_lquwl")]
+position = Vector2(-22.5, -61.5)
+
+[node name="AnimatedSprite2D7" parent="Node2D9/Node2D8/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-61.5, -61.5)
+
+[node name="AnimatedSprite2D8" parent="Node2D9/Node2D8/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-100.5, -61.5)
+
+[node name="AnimatedSprite2D9" parent="Node2D9/Node2D8/Node2D7" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-138.5, -61.5)
+
+[node name="Node2D8" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-407, 109)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D8" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D8" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D9" type="Node2D" parent="Node2D9/Node2D8"]
+position = Vector2(-407, 0)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D9" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D9" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D9" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D9" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="Node2D4" type="Node2D" parent="Node2D9/Node2D8/Node2D9"]
+position = Vector2(0, -90)
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" parent="Node2D9/Node2D8/Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+position = Vector2(1.5, -110.5)
+
+[node name="AnimatedSprite2D3" parent="Node2D9/Node2D8/Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 1
+position = Vector2(-37.5, -110.5)
+
+[node name="AnimatedSprite2D4" parent="Node2D9/Node2D8/Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 2
+position = Vector2(-76.5, -110.5)
+
+[node name="AnimatedSprite2D5" parent="Node2D9/Node2D8/Node2D9/Node2D4" instance=ExtResource("3_lquwl")]
+z_index = 4
+position = Vector2(-114.5, -110.5)
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Node2D9"]
+z_index = -1
+texture_filter = 1
+position = Vector2(-468, -238)
+scale = Vector2(30.68829, 24.233767)
+sprite_frames = SubResource("SpriteFrames_kek77")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="Node2D9"]
+z_index = -2
+texture_filter = 1
+position = Vector2(-165.20836, -154.20834)
+scale = Vector2(66.59895, 40.973957)
+sprite_frames = SubResource("SpriteFrames_efxa6")

@@ -32,27 +32,15 @@ func _physics_process(delta: float) -> void:
 		mouseDown=true
 	if Input.is_action_just_released("MouseDown"):
 		mouseDown=false
-	if Input.is_action_just_pressed("midDown"):
-		midDown=true
-		initPos=get_viewport().get_mouse_position()
-		camInitPos=camera.position
-	if Input.is_action_just_released("midDown"):
-		midDown=false
-		initPos=Vector2.ZERO
-	if midDown:
-		camera.position=camInitPos-1*pow(1.2/camera.scale.x,3)*(get_viewport().get_mouse_position()-initPos)
-		#print(initPos)
-	else:
-		initPos=get_viewport().get_mouse_position()	
 	if mouseDown and mouseIn:
 		global_position=mousePos
-	if not mouseDown and int(position.y)%20!=0:
-		position.y=(int(position.y)%20)*20
-		print(int(position.y))
-	if not mouseDown and int(position.x)%20!=0:
-		position.x=(int(position.x)%20)*20
-		print(int(position.x))
-			
+	#if not mouseDown and int(position.y)%20!=0:
+	#	position.y=(int(position.y)%20)*20
+	#	print(int(position.y))
+	#if not mouseDown and int(position.x)%20!=0:
+	#	position.x=(int(position.x)%20)*20
+	#	print(int(position.x))
+	#		
 func _on_area_2d_mouse_entered() -> void:
 	mouseIn=true
 
