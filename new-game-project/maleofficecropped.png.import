@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dofslg53vtrek"
-path="res://.godot/imported/businessman1_walk_down.png-f8094db6495ed09c4d7adca86ab51661.ctex"
+uid="uid://b8l11wm1udaeo"
+path="res://.godot/imported/maleofficecropped.png-03e998469f7778e656543625c7d646f9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Little_Bits_Office_tileset/businessman1/businessman1_walk_down.png"
-dest_files=["res://.godot/imported/businessman1_walk_down.png-f8094db6495ed09c4d7adca86ab51661.ctex"]
+source_file="res://maleofficecropped.png"
+dest_files=["res://.godot/imported/maleofficecropped.png-03e998469f7778e656543625c7d646f9.ctex"]
 
 [params]
 
