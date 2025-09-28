@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dp7xqpvbtn35p"]
+
+[ext_resource type="Script" uid="uid://8mai8idj4yw4" path="res://Scripts/person_node.gd" id="1_mkxmp"]
+
+[sub_resource type="Gradient" id="Gradient_mkxmp"]
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_dlrvd"]
+gradient = SubResource("Gradient_mkxmp")
+width = 20
+height = 20
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mkxmp"]
+
+[node name="PersonNode" type="Node2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_mkxmp")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("GradientTexture2D_dlrvd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_mkxmp")
+
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]
